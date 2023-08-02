@@ -6,7 +6,7 @@ import ImageCarousel from './ImageCarousel'
 
 const Hero2:React.FC=() =>{
   return (
-    <div className='w-full h-full'>
+    <div className='w-[95vw] h-full'>
     <div className='md:flex md:flex-row flex-col items-center justify-center'>
 <div className='flex flex-col h-60 md:h-[60vh] items-center justify-center md:items-start gap-7'>
       <div>Welcome to Veda&apos;s Creation</div>

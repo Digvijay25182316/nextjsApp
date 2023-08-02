@@ -14,8 +14,8 @@ interface HeaderProps {
 const Header: React.FC<HeaderProps> = () => {
 
   return (
-    <header className='sticky top-0 flex flex-col items-center bg-white z-50'>
-      <div className="flex flex-col items-center gap-3 shadow-md py-4 w-[100vw]">
+    <header className='sticky top-0 flex flex-col items-center bg-white z-50 w-[100vw]'>
+      <div className="flex flex-col items-center gap-3 shadow-md py-4 w-full">
         <div className='container mx-auto flex items-center justify-between px-5'>
           {/* Logo */}
           <div className="font-bold text-xl">
@@ -54,7 +54,7 @@ const Header: React.FC<HeaderProps> = () => {
       </div>
       <div className='flex items-center mt-4 border-b md:ml-0 ml-10'>
         <Sidebar/>
-      {<div className='flex flex-col w-[95vw]'>
+      {<div className='flex flex-col w-[87vw]'>
         <Categories />
       </div>}
       </div>

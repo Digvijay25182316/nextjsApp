@@ -19,7 +19,7 @@ const products: Items[] = [
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
     price: 49.99,
     rating:4.5,
-    image: 'https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?cs=srgb&dl=pexels-math-90946.jpg&fm=jpg',
+    image: 'https://images.pexels.com/photos/1667088/pexels-photo-1667088.jpeg?auto=compress&cs=tinysrgb&w=600',
   },
   {
     id: 2,
