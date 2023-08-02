@@ -31,34 +31,34 @@ const Sidebar: React.FC=() => {
       <nav>
         <ul className='flex flex-col gap-5'>
           <li className='hover:bg-gray-100 hover:rounded-lg px-2 py-1'>
-            <Link href="/profile">Profile</Link>
+            <Link className='block w-full' href="/profile"><button>Profile</button></Link>
           </li>
           <li className='hover:bg-gray-100 hover:rounded-lg px-2 py-1'>
-            <Link href="/orders">Order History</Link>
+            <Link className='block w-full' href="/orders"><button>Order History</button></Link>
           </li>
           <li className='hover:bg-gray-100 hover:rounded-lg px-2 py-1'>
-            <Link href="/wishlist">Saved Items/Wishlist</Link>
+            <Link className='block w-full' href="/wishlist"><button>Saved Items/Wishlist</button></Link>
           </li>
           <li className='hover:bg-gray-100 hover:rounded-lg px-2 py-1'>
-            <Link href="/addresses">Address Book</Link>
+            <Link className='block w-full' href="/addresses"><button>Address Book</button></Link>
           </li>
           <li className='hover:bg-gray-100 hover:rounded-lg px-2 py-1'>
-            <Link href="/payment">Payment Methods</Link>
-          </li>
-          <li className='hover:bg-gray-100 hover:rounded-lg px-2 py-1'>
-            <Link href="/settings">Settings</Link>
+            <Link className='block w-full' href="/payment"><button>Payment Methods</button></Link>
           </li>
             <li className='hover:bg-gray-100 hover:rounded-lg px-2 py-1'>
-              <Link href="/loyalty">Loyalty/Rewards Points</Link>
+              <Link className='block w-full' href="/loyalty"><button>Loyalty/Rewards Points</button></Link>
             </li>
           <li className='hover:bg-gray-100 hover:rounded-lg px-2 py-1'>
-            <Link href="/notifications">Notifications</Link>
+            <Link className='block w-full' href="/notifications"><button>Notifications</button></Link>
           </li>
           <li className='hover:bg-gray-100 hover:rounded-lg px-2 py-1'>
-            <Link href="/support">Help/Support</Link>
+            <Link className='block w-full' href="/support"><button>Help/Support</button></Link>
           </li>
           <li className='hover:bg-gray-100 hover:rounded-lg px-2 py-1'>
-            <Link href="/sign-out">Sign Out</Link>
+            <Link className='block w-full' href="/sign-out"><button className='flex w-fit'>Sign Out</button></Link>
+          </li>
+          <li className='hover:bg-gray-100 hover:rounded-lg px-2 py-1'>
+            <Link className='block w-full' href="/settings"><button>Settings</button></Link>
           </li>
         </ul>
       </nav>

@@ -54,7 +54,7 @@ const Header: React.FC<HeaderProps> = () => {
       </div>
       <div className='flex items-center mt-4 border-b md:ml-0 ml-10'>
         <Sidebar/>
-      {<div className='flex flex-col w-[87vw]'>
+      {<div className='flex flex-col w-[87vw] md:[100vw]'>
         <Categories />
       </div>}
       </div>
