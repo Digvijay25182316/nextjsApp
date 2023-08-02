@@ -1,95 +1,68 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import ProductsGrid from '@/components/ProductGrid';
+import Hero from '@/components/Hero';
+
+
+interface Items {
+  id: number;
+  name: string;
+  price:Number;
+  rating:number;
+  description: string;
+  image: string;
+}
+
+
+const products: Items[] = [
+  {
+    id: 1,
+    name: 'Product 1',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    price: 49.99,
+    rating:4.5,
+    image: 'https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?cs=srgb&dl=pexels-math-90946.jpg&fm=jpg',
+  },
+  {
+    id: 2,
+    name: 'Product 2',
+    description: 'Vestibulum a magna ac ligula bibendum tincidunt euismod ',
+    price: 29.99,
+    rating:5,
+    image: 'https://res.cloudinary.com/sagacity/image/upload/c_crop,h_3825,w_5823,x_0,y_0/c_limit,dpr_auto,f_auto,fl_lossy,q_80,w_1080/shutterstock_1029009367_x1u5we.jpg',
+  },
+  {
+    id: 3,
+    name: 'Product 3',
+    description: 'Praesent feugiat metus non congue venenatis.',
+    price: 39.99,
+    rating:3,
+    image: 'https://images.pexels.com/photos/335257/pexels-photo-335257.jpeg?auto=compress&cs=tinysrgb&w=600',
+  },
+  {
+    id: 4,
+    name: 'Product 4',
+    description: 'Ut scelerisque, purus vitae venenatis tincidunt, elit ',
+    price: 59.99,
+    rating:4,
+    image: 'https://images.pexels.com/photos/1667088/pexels-photo-1667088.jpeg?auto=compress&cs=tinysrgb&w=600',
+  },
+  {
+    id: 5,
+    name: 'Product 5',
+    description: 'In at tortor egestas, vulputate quam nec, euismod nisl.',
+    price: 19.99,
+    rating:5,
+    image: 'https://images.pexels.com/photos/380954/pexels-photo-380954.jpeg?auto=compress&cs=tinysrgb&w=600',
+  },
+];
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
+    <div className={`text-3xl flex items-center  flex-col`} >
+      <Hero/>
+      {/* <Hero/> */}
+      <div className='m-5 mb-10'>
+      <ProductsGrid items={products}/>
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </div>
   )
 }
