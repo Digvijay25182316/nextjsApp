@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import Link from 'next/link';
 import Logo from "../assets/Logo.svg"
 import { FaFacebook, FaTwitter, FaInstagram } from 'react-icons/fa';

@@ -1,6 +1,6 @@
 "use client"
 import React, { useEffect, useState } from 'react';
-import Image from 'next/image';
+import Image from "next/legacy/image";
 
 // Replace these with your own image paths
 const img1='https://res.cloudinary.com/sagacity/image/upload/c_crop,h_3825,w_5823,x_0,y_0/c_limit,dpr_auto,f_auto,fl_lossy,q_80,w_1080/shutterstock_1029009367_x1u5we.jpg';
